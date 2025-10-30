@@ -3,7 +3,6 @@ import Scene from "./_components/scene";
 import LatheScene from "./_components/latheScene";
 import TextScene from "./_components/textScene";
 import RingScene from "./_components/ringScene";
-import Navbar from "./_components/navbar";
 
 export default function Home() {
   return (
