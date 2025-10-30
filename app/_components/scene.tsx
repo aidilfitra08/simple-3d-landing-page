@@ -1,9 +1,10 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Environment } from "@react-three/drei";
+import { OrbitControls, Environment, ContactShadows } from "@react-three/drei";
 import * as THREE from "three";
 import { useRef } from "react";
+import MyModel from "./myModels";
 
 function Box() {
   const meshRef = useRef<THREE.Mesh>(null!);
@@ -41,6 +42,15 @@ export default function Scene() {
 
         {/* 🧱 The box */}
         <Box />
+
+        {/* <MyModel /> */}
+        <ContactShadows
+          position={[0, -1.2, 0]}
+          opacity={0.6}
+          scale={10}
+          blur={2.5}
+          far={4}
+        />
 
         {/* 🌅 Environment lighting */}
         <Environment preset="sunset" />
