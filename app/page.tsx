@@ -1,10 +1,17 @@
 import Image from "next/image";
 import Scene from "./_components/scene";
+import LatheScene from "./_components/latheScene";
+import TextScene from "./_components/textScene";
+import RingScene from "./_components/ringScene";
+import Navbar from "./_components/navbar";
 
 export default function Home() {
   return (
     <main className="relative w-full h-screen overflow-hidden">
       <Scene />
+      {/* <RingScene /> */}
+      {/* <LatheScene /> */}
+      {/* <TextScene /> */}
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
         <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
